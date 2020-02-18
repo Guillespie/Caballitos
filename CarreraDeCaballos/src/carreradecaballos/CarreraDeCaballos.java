@@ -8,10 +8,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- *
- * @author a18guillermolc
- */
 public class CarreraDeCaballos extends Application {
     
     @Override
