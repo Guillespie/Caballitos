@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.canvas.Canvas?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<SplitPane dividerPositions="0.23300970873786409" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="1178.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane dividerPositions="0.23300970873786409" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="1178.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="657.0" prefWidth="201.0">
          <children>
@@ -38,37 +39,37 @@
             <Line endX="831.0" endY="334.0" layoutX="10.0" layoutY="-174.0" startX="143.0" startY="334.0" />
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="710.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../carreraimagenesfx/imagemeta.png" />
+                  <Image url="@../../img/imagemeta.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="710.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../carreraimagenesfx/imagemeta.png" />
+                  <Image url="@../../img/imagemeta.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="710.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../carreraimagenesfx/imagemeta.png" />
+                  <Image url="@../../img/imagemeta.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="59.0" fitWidth="107.0" layoutX="19.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../carreraimagenesfx/mongodb.png" />
+                  <Image url="@../../img/mongodb.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="67.0" fitWidth="111.0" layoutX="24.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../carreraimagenesfx/neodatis.png" />
+                  <Image url="@../../img/neodatis.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="38.0" fitWidth="101.0" layoutX="24.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../carreraimagenesfx/existdb.png" />
+                  <Image url="@../../img/existdb.png" />
                </image>
             </ImageView>
             <ImageView fx:id="caballoMongo" fitHeight="67.0" fitWidth="114.0" layoutX="143.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../carreraimagenesfx/horse-static.png" />
+                  <Image url="@../../img/horse-static.png" />
                </image>
             </ImageView>
             <Text fx:id="textTiempoNeodatis" fontSmoothingType="LCD" layoutX="146.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="173.93264770507812">
@@ -88,12 +89,12 @@
             </Text>
             <ImageView fx:id="caballoNeodatis" fitHeight="67.0" fitWidth="114.0" layoutX="143.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../carreraimagenesfx/horse-static.png" />
+                  <Image url="@../../img/horse-static.png" />
                </image>
             </ImageView>
             <ImageView fx:id="caballoExist" fitHeight="67.0" fitWidth="114.0" layoutX="143.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../carreraimagenesfx/horse-static.png" />
+                  <Image url="@../../img/horse-static.png" />
                </image>
             </ImageView>
             <Text fx:id="textGanador" layoutX="222.0" layoutY="613.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="357.13671875">
@@ -101,6 +102,7 @@
                   <Font name="Symbol" size="14.0" />
                </font>
             </Text>
+            <Canvas fx:id="canva" height="493.0" layoutX="122.0" layoutY="62.0" width="750.0" />
          </children></AnchorPane>
   </items>
 </SplitPane>
