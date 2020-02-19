@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.neodatis.odb:neodatis-odb:1.9.30.689">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/neodatis/odb/neodatis-odb/1.9.30.689/neodatis-odb-1.9.30.689.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/neodatis/odb/neodatis-odb/1.9.30.689/neodatis-odb-1.9.30.689-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/neodatis/odb/neodatis-odb/1.9.30.689/neodatis-odb-1.9.30.689-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
