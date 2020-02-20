@@ -6,6 +6,7 @@
 package controller;
 
 
+import basesDatos.bigData;
 import carreradecaballos.Image_resources;
 import carreradecaballos.animaciones;
 import com.mongodb.client.MongoCollection;
@@ -16,10 +17,13 @@ import javafx.scene.canvas.*;
 import javafx.scene.image.ImageView;
 import objetos.Airport;
 
+import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import static basesDatos.mongoDB.Conexion.connect_mongoDB;
+import static basesDatos.mongoDB.Insert.mongoDB_insertMany;
 import static basesDatos.mongoDB.Insert.mongoDB_insertOne;
 
 public class FXMLDocumentController implements Initializable {
@@ -32,10 +36,17 @@ public class FXMLDocumentController implements Initializable {
 
     public GraphicsContext gc;
 
+    public ArrayList<Airport> airports = new ArrayList<>();
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        mongoDB_insertOne();
+        try {
+            airports = bigData.import_csv();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        mongoDB_insertMany(airports);
 
         linea1.setImage(Image_resources.cesped);
         linea2.setImage(Image_resources.cesped);

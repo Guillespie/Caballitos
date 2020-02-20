@@ -12,9 +12,10 @@ public class Airport {
     private String municipality;
     private String gps_code;
     private String local_code;
-    private String coordinates;
+    private double latitude;
+    private double longitude;
 
-    public Airport(String id, String type, String name, int elevation, String continent, String country, String region, String municipality, String gps_code, String local_code, String coordinates) {
+    public Airport(String id, String type, String name, int elevation, String continent, String country, String region, String municipality, String gps_code, String local_code, double latitude, double longitude) {
         this.id = id;
         this.type = type;
         this.name = name;
@@ -25,7 +26,8 @@ public class Airport {
         this.municipality = municipality;
         this.gps_code = gps_code;
         this.local_code = local_code;
-        this.coordinates = coordinates;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public String getId() {
@@ -108,34 +110,19 @@ public class Airport {
         this.local_code = local_code;
     }
 
-    public String getCoordinates() {
-        return coordinates;
-    }
-
-    public void setCoordinates(String coordinates) {
-        this.coordinates = coordinates;
-    }
-
-    public long getLatitude(){
-
-        long latitude;
-
-        String[] values = this.coordinates.split(",");
-
-        latitude = Long.valueOf(values[0]);
-
+    public double getLatitude() {
         return latitude;
     }
 
-    public long getLongitude(){
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
 
-        long longitude;
-
-        String[] values = this.coordinates.split(", ");
-
-        longitude = Long.valueOf(values[1]);
-
+    public double getLongitude() {
         return longitude;
+    }
 
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 }

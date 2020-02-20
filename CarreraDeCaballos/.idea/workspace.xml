@@ -20,12 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d9fbe96-47a3-42cb-9321-6376246c71a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basesDatos/mongoDB/Conexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basesDatos/mongoDB/Insert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/objetos/Airport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/basesDatos/bigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/.~lock.airport-codes.csv#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/airport-codes.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basesDatos/mongoDB/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basesDatos/mongoDB/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basesDatos/mongoDB/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basesDatos/mongoDB/Insert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/FXMLDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FXMLDocumentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/objetos/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objetos/Airport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/basesDatos/mongoDB/Conexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/basesDatos/mongoDB/Conexion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/basesDatos/mongoDB/Insert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/basesDatos/mongoDB/Insert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/FXMLDocumentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/FXMLDocumentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/objetos/Airport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/objetos/Airport.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +116,7 @@
       <workItem from="1582049813454" duration="310000" />
       <workItem from="1582109971272" duration="6309000" />
       <workItem from="1582120017796" duration="401000" />
-      <workItem from="1582197823595" duration="3282000" />
+      <workItem from="1582197823595" duration="7235000" />
     </task>
     <servers />
   </component>
@@ -142,10 +148,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="415" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582110475033" />
-    <state x="764" y="193" width="376" height="551" key="#com.intellij.ide.util.MemberChooser" timestamp="1582198832277">
+    <state x="761" y="139" width="376" height="551" key="#com.intellij.ide.util.MemberChooser" timestamp="1582204912384">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="764" y="193" width="376" height="551" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1582198832277" />
+    <state x="761" y="139" width="376" height="551" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1582204912384" />
     <state x="562" y="198" width="786" height="650" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582110169739">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -154,25 +160,25 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="742" y="286" width="426" height="473" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1582198338460" />
-    <state width="1842" height="276" key="GridCell.Tab.0.bottom" timestamp="1582200790617">
+    <state width="1842" height="276" key="GridCell.Tab.0.bottom" timestamp="1582205067522">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1842" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582200790617" />
+    <state width="1842" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582205067522" />
     <state width="1858" height="285" key="GridCell.Tab.0.bottom/1440.0.1920.1080/0.0.1440.900@1440.0.1920.1080" timestamp="1582050109377" />
-    <state width="1842" height="276" key="GridCell.Tab.0.center" timestamp="1582200790616">
+    <state width="1842" height="276" key="GridCell.Tab.0.center" timestamp="1582205067521">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1842" height="276" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582200790616" />
+    <state width="1842" height="276" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582205067521" />
     <state width="1858" height="285" key="GridCell.Tab.0.center/1440.0.1920.1080/0.0.1440.900@1440.0.1920.1080" timestamp="1582050109377" />
-    <state width="1842" height="276" key="GridCell.Tab.0.left" timestamp="1582200790615">
+    <state width="1842" height="276" key="GridCell.Tab.0.left" timestamp="1582205067521">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1842" height="276" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582200790615" />
+    <state width="1842" height="276" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582205067521" />
     <state width="1858" height="285" key="GridCell.Tab.0.left/1440.0.1920.1080/0.0.1440.900@1440.0.1920.1080" timestamp="1582050109377" />
-    <state width="1842" height="276" key="GridCell.Tab.0.right" timestamp="1582200790617">
+    <state width="1842" height="276" key="GridCell.Tab.0.right" timestamp="1582205067522">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1842" height="276" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582200790617" />
+    <state width="1842" height="276" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582205067522" />
     <state width="1858" height="285" key="GridCell.Tab.0.right/1440.0.1920.1080/0.0.1440.900@1440.0.1920.1080" timestamp="1582050109377" />
     <state width="1842" height="341" key="GridCell.Tab.1.bottom" timestamp="1582119692012">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -194,9 +200,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="445" y="109" width="1026" height="834" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1582110500203" />
-    <state x="2063" y="225" key="search.everywhere.popup" timestamp="1582049492284">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582202726811">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582202726811" />
     <state x="2063" y="225" key="search.everywhere.popup/1440.0.1920.1080/0.0.1440.900@1440.0.1920.1080" timestamp="1582049492284" />
   </component>
 </project>

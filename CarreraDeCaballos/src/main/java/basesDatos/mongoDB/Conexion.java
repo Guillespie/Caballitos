@@ -41,6 +41,7 @@ public class Conexion {
         MongoDatabase database = mongoClient.getDatabase("Airports");
 
         MongoCollection<Airport> collection = database.getCollection("Airports", Airport.class);
+        collection.drop();
 
         return collection;
 
