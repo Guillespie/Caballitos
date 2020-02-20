@@ -8,14 +8,19 @@ package controller;
 
 import carreradecaballos.Image_resources;
 import carreradecaballos.animaciones;
+import com.mongodb.client.MongoCollection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.*;
 import javafx.scene.image.ImageView;
+import objetos.Airport;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import static basesDatos.mongoDB.Conexion.connect_mongoDB;
+import static basesDatos.mongoDB.Insert.mongoDB_insertOne;
 
 public class FXMLDocumentController implements Initializable {
 
@@ -29,6 +34,8 @@ public class FXMLDocumentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        mongoDB_insertOne();
 
         linea1.setImage(Image_resources.cesped);
         linea2.setImage(Image_resources.cesped);
@@ -46,6 +53,7 @@ public class FXMLDocumentController implements Initializable {
     public void insertMasivo(ActionEvent actionEvent) {
 
         animaciones.comenzar_animacion(gc);
+
     }
 
     @FXML

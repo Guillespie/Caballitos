@@ -1,6 +1,6 @@
 package objetos;
 
-public class Aeropuerto {
+public class Airport {
 
     private String id;
     private String type;
@@ -14,7 +14,7 @@ public class Aeropuerto {
     private String local_code;
     private String coordinates;
 
-    public Aeropuerto(String id, String type, String name, int elevation, String continent, String country, String region, String municipality, String gps_code, String local_code, String coordinates) {
+    public Airport(String id, String type, String name, int elevation, String continent, String country, String region, String municipality, String gps_code, String local_code, String coordinates) {
         this.id = id;
         this.type = type;
         this.name = name;
