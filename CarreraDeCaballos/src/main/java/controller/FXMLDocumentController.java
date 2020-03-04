@@ -7,9 +7,11 @@ package controller;
 
 
 import basesDatos.bigData;
+import basesDatos.mongoDB.mongoInsert;
+import basesDatos.neodatis.neoInsert;
 import carreradecaballos.Image_resources;
-import carreradecaballos.animaciones;
-import com.mongodb.client.MongoCollection;
+import carreradecaballos.Animaciones;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -22,9 +24,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-import static basesDatos.mongoDB.Conexion.connect_mongoDB;
-import static basesDatos.mongoDB.Insert.mongoDB_insertMany;
-import static basesDatos.mongoDB.Insert.mongoDB_insertOne;
+//import static basesDatos.neodatis.Insert.neodatis_insertMany;
 
 public class FXMLDocumentController implements Initializable {
 
@@ -36,7 +36,7 @@ public class FXMLDocumentController implements Initializable {
 
     public GraphicsContext gc;
 
-    public ArrayList<Airport> airports = new ArrayList<>();
+    public static ArrayList<Airport> airports = new ArrayList<>();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -46,7 +46,10 @@ public class FXMLDocumentController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        mongoDB_insertMany(airports);
+
+        //mongoDB_insertMany(airports);
+
+        //neodatis_insertMany(airports);
 
         linea1.setImage(Image_resources.cesped);
         linea2.setImage(Image_resources.cesped);
@@ -54,46 +57,47 @@ public class FXMLDocumentController implements Initializable {
 
         canva.toBack();
         gc = canva.getGraphicsContext2D();
-        gc.drawImage(Image_resources.caballo_estatico,0,animaciones.y_caballo1,110,82);
-        gc.drawImage(Image_resources.caballo_estatico,0,animaciones.y_caballo2,110,82);
-        gc.drawImage(Image_resources.caballo_estatico,0,animaciones.y_caballo3,110,82);
+        gc.drawImage(Image_resources.caballo_estatico,0, Animaciones.y_caballo1,110,82);
+        gc.drawImage(Image_resources.caballo_estatico,0, Animaciones.y_caballo2,110,82);
+        gc.drawImage(Image_resources.caballo_estatico,0, Animaciones.y_caballo3,110,82);
 
     }
 
     @FXML
-    public void insertMasivo(ActionEvent actionEvent) {
+    public void insertMasivo(ActionEvent actionEvent) throws InterruptedException {
 
-        animaciones.comenzar_animacion(gc);
+        Animaciones animaciones = new Animaciones(gc);
+
+        animaciones.startInsert();
+
 
     }
 
     @FXML
-    public void insertOne(ActionEvent actionEvent) {
-        animaciones.comenzar_animacion(gc);
+    public void insertOne(ActionEvent actionEvent){
     }
 
     @FXML
     public void insertFloat(ActionEvent actionEvent) {
-        animaciones.comenzar_animacion(gc);
+
     }
 
     @FXML
     public void insertString(ActionEvent actionEvent) {
-        animaciones.comenzar_animacion(gc);
+
     }
 
     @FXML
     public void insertInteger(ActionEvent actionEvent) {
-        animaciones.comenzar_animacion(gc);
+
     }
 
     @FXML
     public void borradoMasivo(ActionEvent actionEvent) {
-        animaciones.comenzar_animacion(gc);
+
     }
 
     @FXML
     public void modificadoMasivo(ActionEvent actionEvent) {
-        animaciones.comenzar_animacion(gc);
     }
 }

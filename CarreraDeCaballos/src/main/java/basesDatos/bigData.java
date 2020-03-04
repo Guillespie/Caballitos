@@ -23,10 +23,12 @@ public class bigData {
         csvReader.readLine();
 
         while ((row = csvReader.readLine()) != null) {
-            System.out.println(i);
-            System.out.println(row);
 
             String[] data = row.split(",");
+
+            if(data[3].equalsIgnoreCase("")){
+                data[3] = "0";
+            }
 
             Airport airport = new Airport(data[0], //id
                     data[1], //type

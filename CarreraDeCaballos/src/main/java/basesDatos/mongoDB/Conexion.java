@@ -46,4 +46,8 @@ public class Conexion {
         return collection;
 
     }
+
+    public static void close_mongoDB(){
+        mongoClient.close();
+    }
 }
